@@ -61,9 +61,11 @@ public class SpringBootJdbcApplication implements CommandLineRunner {
 //		});
 
 		// findAll By age and age and name like
-		jdbcTemplate.query("select * from student s where s.age = ? and s.name like ?",
-				new Object[]{19, "%i%"}, (rs, i) -> toStudent(rs, i))
-				.forEach(System.out::println);
+//		jdbcTemplate.query("select * from student s where s.age = ? and s.name like ?",
+//				new Object[]{19, "%i%"}, (rs, i) -> toStudent(rs, i))
+//				.forEach(System.out::println);
+
+        
 
 	}
 
